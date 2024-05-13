@@ -1,6 +1,6 @@
 <section class="section-banners-home">
     <div class="container{% if settings.banner_promotional_full %}-fluid{% endif %}">
-        <div class="row">
+        <div class="row" style="display:grid;grid-template-columns:1fr 1fr;place-content:center;">
             {% set num_banners = 0 %}
             {% for banner in ['banner_promotional_01', 'banner_promotional_02'] %}
                 {% set banner_show = attribute(settings,"#{banner}_show") %}

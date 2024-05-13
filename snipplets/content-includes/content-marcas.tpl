@@ -1,4 +1,4 @@
-<div style="margin: 80px 0px;display: grid;grid-template-columns: 1fr 1fr 1fr;place-content: center;">
+<div class="container_marcas" style="margin: 80px 0px;display: grid;grid-template-columns: 1fr 1fr 1fr;place-content: center;">
     <div style="position:relative">
         <p style="position:absolute"><b>A</b></p>
         <a href="https://beethovenvillavo.com/marcas/agility-gold1/"><img class="imgCard--marca" src="{{ 'images/2A.png' | static_url }}"></a>

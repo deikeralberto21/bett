@@ -1829,8 +1829,31 @@ footer {
   .imgCard--marca{
     height:50%
   } 
+
+  .continer-promotonal{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  place-content:center;
+
 }
 
 .imgCard{
     height:80%
   } 
+
+.container_marcas a, .container_marcas div a{
+  height:max-content
+}
+
+.container_marcas{
+  gap:10px
+}
+
+
+
+.container_marcas a img, .container_marcas div a img{
+  background-color:red;
+  height:100%;
+  width:90%
+}
+}
