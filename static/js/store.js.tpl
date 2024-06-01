@@ -921,7 +921,7 @@ $(document).ready(function(){
                     prevEl: '.js-swiper-brands-prev',
                 },
                 breakpoints: {
-                    640: {
+                    0: {
                         slidesPerView: 5,
                     }
                 }
@@ -2305,7 +2305,7 @@ $(document).ready(function(){
                     clickable: true,
                 },
                 breakpoints: {
-                    640: {
+                    0: {
                         slidesPerView: 3,
                     }
                 }

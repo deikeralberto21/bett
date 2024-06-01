@@ -1,13 +1,13 @@
 {% if settings.brands and settings.brands is not empty %}
 	<section class="section-brands-home">
-		<h2 class="brandTittle">NUESTRAS MARCAS ALIADAS</h2>
+		<h2 style='margin-bottom:0;' class="brandTittle">NUESTRAS MARCAS ALIADAS</h2>
 		<div class="container">
 			<div class="row">
 				<div class="col p-0 px-md-3">
 					<div class="js-swiper-brands swiper-container">
 					    <div class="swiper-wrapper">
 					        {% for slide in settings.brands %}
-				                <div class="swiper-slide slide-container">
+				                <div class="swiper-slide swiperWidth slide-container">
 				                	{% if slide.link %}
 				                		<a href="{{ slide.link | setting_url }}" title="{{ 'Marca {1} de' | translate(loop.index) }} {{ store.name }}" aria-label="{{ 'Marca {1} de' | translate(loop.index) }} {{ store.name }}">
 				                	{% endif %}

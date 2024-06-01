@@ -1,6 +1,6 @@
 <section class="section-banners-home">
     <div class="container{% if settings.banner_promotional_full %}-fluid{% endif %}">
-        <div class="row" style="display:grid;grid-template-columns:1fr 1fr;place-content:center;">
+        <div class="row" style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;place-content:center;">
             {% set num_banners = 0 %}
             {% for banner in ['banner_promotional_01', 'banner_promotional_02'] %}
                 {% set banner_show = attribute(settings,"#{banner}_show") %}
@@ -20,7 +20,7 @@
                 {% set has_banner =  banner_show and (banner_title or banner_image) %}
                 {% set has_banner_text =  banner_title or banner_button_text %}
                 {% if has_banner %}
-                    <div class="col-md-{% if num_banners == 1 %}6 offset-md-3{% elseif num_banners == 2 %}6{% elseif num_banners == 3 %}4{% endif %}">
+                    <div class="col-md-9">
                         <div class="textbanner{% if settings.theme_rounded %} box-rounded textbanner-shadow{% endif %}">
                             {% if banner_url %}
                                 <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
@@ -47,7 +47,7 @@
                     </div>
                 {% endif %}
             {% endfor %}
-            <div class="col-md-6">
+            <div class="col-md-9">
                 <div class="textbanner box-rounded textbanner-shadow">
                 <a class="textbanner-link" href="GOOGLE.COM/" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">

@@ -10,7 +10,7 @@
 
 {% set has_seal_logos = store.afip or ebit or settings.custom_seal_code or ("seal_img.jpg" | has_custom_image) %}
 {% set show_help = not has_products and not has_social_network %}
-<footer class="js-hide-footer-while-scrolling display-when-content-ready" data-store="footer">
+<footer style='margin-top:0;' class="js-hide-footer-while-scrolling display-when-content-ready" data-store="footer">
 	<div class="container-fluid px-md-5">
 		<div class="row element-footer">
 			
@@ -31,14 +31,7 @@
 				{% endif %}
 
 				{# Foot Nav #}
-				{% if has_footer_menu %}
-					<div class="col">
-						{% if settings.footer_menu_title %}
-							<h4 class="h3">{{ settings.footer_menu_title }}</h4>
-						{% endif %}
-						{% include "snipplets/navigation/navigation-foot.tpl" %}
-					</div>
-				{% endif %}
+				
 
 				{# Foot Nav Secondary #}
 				{% if has_footer_menu_secondary %}
@@ -93,6 +86,9 @@
 
 			{% endif %}
 
+		<div class="row element-footer">
+			<img style='height:65%;width:65%;' src="{{ 'images/acces/bann3r.png' | static_url }}">
+		</div>
 		</div>
 
 		{% if template != 'password' %}
@@ -170,9 +166,13 @@
 			{% endif %}
 
 		{% endif %}
+
 	</div>
 	<div class="footer-legal">
-		<div class="container-fluid px-md-5">
+		<div class="footer_content">
+			<img style="width: 30%" src="{{ 'images/acces/method.png' | static_url }}">
+		</div>
+		<!-- <div class="container-fluid px-md-5">
 			<div class="row">
 
 	            <div class="col-md-9 text-md-left mb-3 mb-md-0">
@@ -204,6 +204,6 @@
 	            </div>
 	            
 	        </div>
-    	</div>
+    	</div> -->
     </div>
 </footer>

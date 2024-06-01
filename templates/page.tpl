@@ -4,7 +4,7 @@
 
 {# Institutional page  #}
 
-<section class="user-content pb-5">
+<section class="user-content pb-1">
 	<div class="container">
 		<div class="row justify-content-md-center">
 			<div class="col-md-10">

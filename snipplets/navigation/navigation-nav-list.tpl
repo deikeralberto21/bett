@@ -13,6 +13,7 @@
 				<div class="nav-item-container {% if not desktop_nav %}js-nav-list-toggle-accordion{% endif %}">
 					<a class="{% if not desktop_nav %}js-toggle-page-accordion{% endif %} nav-list-link {{ item.current ? 'selected' : '' }}" href="{% if desktop_nav %}{{ item.url }}{% else %}#{% endif %}">
 					{% if item.name == 'PERROS' %}
+
 						{{'<ion-icon class="ion" name="paw"></ion-icon>'}}
 					{% endif %}
 					{% if item.name == 'GATOS' %}
@@ -21,7 +22,7 @@
 					{% if item.name == 'ALIMENTOS' %}
 						{{'<ion-icon class="ion" name="fast-food"></ion-icon>'}}
 					{% endif %}
-					{% if item.name == 'higiene' or item.name == 'HIGIENE' or item.name == 'Higiene' or item.name == 'hygiene' %}
+					{% if 'higiene' in item.name|lower %}
 						{{'<ion-icon class="ion" name="cut"></ion-icon>'}}
 					{% endif %}
 					{% if item.name == 'FARMACIA' %}

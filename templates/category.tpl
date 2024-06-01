@@ -21,6 +21,69 @@
 				{% embed "snipplets/page-header.tpl" %}
 					{% block page_header_text %}{{ category.name }}{% endblock page_header_text %}
 				{% endembed %}
+				<!-- CRoquetas -->
+				<div style="width: 100%;display:flex;justify-content:center;gap:10px">
+					{% if category.name == 'CACHORRO' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/cachorros/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/cachorros1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'ADULTO' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/adultos/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/adultos1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'SENIOR' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/senior-7/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/senior-71/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'SOBRES' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimento-humedo/pouches-y-latas/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/alimento-humedo2/pouches-y-latas-alimento-humedo/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'LATAS' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimento-humedo/latas2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/alimento-humedo2/latas1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'MEDICADOS' %}
+						<a href="https://beethovenvillavo.com/dieta-blanda-medicada" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/medicados2" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'JUGUETES' %}
+						<a href="https://beethovenvillavo.com/gatos/accesorios2/juguetes1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/accesorios2/juguetes2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'COLLARES, ARNES E INDUMENTARIA' %}
+						<a href="https://beethovenvillavo.com/perros/accesorios1/collares-e-indumentaria/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/accesorios2/collares-y-pecheras/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'CEPILLOS / CORTAUÑAS' %}
+						<a href="https://beethovenvillavo.com/perros/accesorios1/cepillos-y-cortaunas/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/accesorios2/cepillos-y-deslanadores1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'ANTIPULGAS Y GARRAPATAS' %}
+						<a href="https://beethovenvillavo.com/perros/farmacia2/antipulgas-y-garrapatas2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/farmacia1/antipulgas-y-garrapatas1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'DESPARASITANTES / PURGANTES' %}
+						<a href="https://beethovenvillavo.com/perros/farmacia2/desparasitantes-purgantes2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/farmacia1/desparasitantes-purgantes1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'PARA BAÑO' %}
+						<a href="https://beethovenvillavo.com/perros/higiene-y-cuidados/para-bano/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/limpieza-higiene-y-cuidados/para-bano1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'ENSEÑANZA' %}
+						<a href="https://beethovenvillavo.com/perros/higiene-y-cuidados/ensenanza1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/limpieza-higiene-y-cuidados/ensenanza2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'SALUD ORAL' %}
+						<a href="https://beethovenvillavo.com/perros/higiene-y-cuidados/salud-oral1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/limpieza-higiene-y-cuidados/salud-oral2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'OREJAS' %}
+						<a href="https://beethovenvillavo.com/perros/higiene-y-cuidados/orejas1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/limpieza-higiene-y-cuidados/orejas2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					</div>
 			</div>
 		{% if category.description and category_banner %}
 			</div>

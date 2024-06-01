@@ -117,32 +117,32 @@
   <div class="navMObilo" style="position: relative;/*! top: 0; *//*! background-color: aqua; */height: 100%;width: 100%;display: flex;align-items: center;justify-content: space-evenly;list-style: none;color: white;margin: 0;">
     
   <a href="https://beethovenvillavo.com/alimentos3">
-    <div>
+    <div class='itemNavMenu'>
       <ion-icon class="ion" name="fast-food"></ion-icon>
       Alimentos
       </div>
   </a>
   <a href="https://beethovenvillavo.com/accesorios11">
-    <div>
+    <div class='itemNavMenu'>
       <ion-icon class="ion" name="glasses"></ion-icon>
       Accesorios
       </div>
   </a>
   <a href="https://beethovenvillavo.com/higiene-principal/">
-    <div>
+    <div class='itemNavMenu'>
       <ion-icon class="ion" name="cut"></ion-icon>
       Higiene
       </div>
   </a>
   <a href="https://beethovenvillavo.com/farmacia11">
-    <div>
+    <div class='itemNavMenu'>
       <ion-icon class="ion" name="bandage"></ion-icon>
       Farmacia
       </div>
   </a>
   <a href="https://beethovenvillavo.com/marcas1">
-    <div>
-      <ion-icon class="ion" name="at-circle-outline"></ion-icon>
+    <div class='itemNavMenu'>
+      <ion-icon class="ion" name="rocket-sharp"></ion-icon>
       Marcas
       </div>
   </a>

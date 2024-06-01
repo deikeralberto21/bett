@@ -339,7 +339,19 @@ style.css
 
 .ion{
     font-size: 1.4em;
+    transition: 0.4s;
+}
 
+.itemNavMenu{
+  transition: 0.4s;
+
+}
+.itemNavMenu:hover{
+  color:#e67e22
+}
+
+.itemNavMenu:hover .ion{
+  fill:#e67e22;
 }
 .radio-buttons-group .list-unstyled{
   .radio-button-item:first-child{
@@ -1244,8 +1256,22 @@ footer {
 }
 
 .footer-legal {
+  background-color:white;
+
   padding: 20px 0;
   font-size: 12px;
+}
+
+.footer_content{
+  height:100%;
+  width:100%;  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.imgFooter{
+  width:50%;
 }
 
 .footer-logo {
@@ -1509,7 +1535,10 @@ footer {
 	max-width: 100%;
 	height: auto !important;
 }
-
+.user-content{
+  margin-bottom:0;
+  padding-bottom:0;
+}
 .social-share-button {
   margin: 5px;
   &:hover,
@@ -1820,40 +1849,73 @@ footer {
    .navmobiloContainer{
     display:none
   }
+  
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:639px){
+  
+  .swiperWidth{
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .imgCard{
+      height:80%
+    } 
+    .imgCard--marca{
+      height:50%
+    } 
+    .continer-promotonal{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    place-content:center;
+
+  }
+
+  .containerBanner{
+    flex-direction:column
+  }
+
   .imgCard{
-    height:80%
-  } 
-  .imgCard--marca{
-    height:50%
-  } 
+      height:80%
+    } 
 
-  .continer-promotonal{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  place-content:center;
+  .container_marcas a, .container_marcas div a{
+    height:max-content
+  }
 
+  .container_marcas{
+    gap:10px
+  }
+
+  .container_marcas a img, .container_marcas div a img{
+    background-color:red;
+    height:100%;
+    width:90%
+  }
 }
 
-.imgCard{
-    height:80%
-  } 
-
-.container_marcas a, .container_marcas div a{
-  height:max-content
+.utilities-container{
+  display:flex
 }
 
-.container_marcas{
-  gap:10px
+.js-toggle-cart .utility-name{
+  width:max-content
 }
 
-
-
-.container_marcas a img, .container_marcas div a img{
-  background-color:red;
-  height:100%;
-  width:90%
+.bannerItem{
+  width:100%
 }
+
+.containerBanner{
+  display: flex;
+  justify-content:center;
+}
+.itemBanner{
+  height:10px;
+}
+
+.pb-5{
+  margin-bottom:0;
+  padding-bottom:0
 }

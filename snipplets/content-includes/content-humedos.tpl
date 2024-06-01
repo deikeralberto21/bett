@@ -3,9 +3,9 @@
 
 </div>
 <div style="margin-top: 80px;display: grid;grid-template-columns: 1fr 1fr;margin: auto;place-content: center;">
-        <a href=""><img class="imgCard" src="{{ 'images/alimen/19.png' | static_url }}"></a>
-        <a href=""><img class="imgCard" src="{{ 'images/alimen/20.png' | static_url }}"></a>
-        <a href=""><img class="imgCard" src="{{ 'images/alimen/21.png' | static_url }}"></a>
-        <a href=""><img class="imgCard" src="{{ 'images/alimen/22.png' | static_url }}"></a>
+        <a href="https://beethovenvillavo.com/sobres"><img class="imgCard" src="{{ 'images/alimen/19.png' | static_url }}"></a>
+        <a href="https://beethovenvillavo.com/latas"><img class="imgCard" src="{{ 'images/alimen/20.png' | static_url }}"></a>
+        <a href="https://beethovenvillavo.com/dulces"><img class="imgCard" src="{{ 'images/alimen/21.png' | static_url }}"></a>
+        <a href="https://beethovenvillavo.com/medicados"><img class="imgCard" src="{{ 'images/alimen/22.png' | static_url }}"></a>
     
 </div>
