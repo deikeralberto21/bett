@@ -23,7 +23,7 @@
     <p>ESTAS A PUNTO DE COMPRAR EN 
       VILLAVICENCIO, PARA CAMBIAR A BOGOTA
       POR FAVOR CLICK AQUI</p>
-    <a href="https://beethovenpetcare.com/"><button style="border: none; border-radius:10px; background-color: #fdcc03; padding: 10px; width: max-content; font-family: 'Fredoka One', sans-serif; font-size:1.2em; color:white;">Cambiar</button></a>
+    <a href="https://beethovenpetcare.com" style="border: none; border-radius:10px; background-color: #fdcc03; padding: 10px; width: max-content; font-family: 'Fredoka One', sans-serif; font-size:1.2em; color:white;">CAMBIAR</a>
   </div>
 <div class="cart-row">
     {% include "snipplets/cart-totals.tpl" %}

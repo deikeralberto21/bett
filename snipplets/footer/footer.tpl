@@ -87,7 +87,7 @@
 			{% endif %}
 
 		<div class="row element-footer">
-			<img style='height:65%;width:65%;' src="{{ 'images/acces/bann3r.png' | static_url }}">
+			<img class='imgFott' src="{{ 'images/acces/bann3r.png' | static_url }}">
 		</div>
 		</div>
 

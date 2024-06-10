@@ -1,7 +1,8 @@
 <section class="section-banners-home">
     <div class="container{% if settings.banner_promotional_full %}-fluid{% endif %}">
-        <div class="row" style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;place-content:center;">
+        <div class="row" style="display:flex;gap:10px;">
             {% set num_banners = 0 %}
+            {% set in = 1%}
             {% for banner in ['banner_promotional_01', 'banner_promotional_02'] %}
                 {% set banner_show = attribute(settings,"#{banner}_show") %}
                 {% set banner_title = attribute(settings,"#{banner}_title") %}
@@ -10,7 +11,6 @@
                     {% set num_banners = num_banners + 1 %}
                 {% endif %}
             {% endfor %}
-
             {% for banner in ['banner_promotional_01', 'banner_promotional_02', 'banner_promotional_03'] %}
                 {% set banner_show = attribute(settings,"#{banner}_show") %}
                 {% set banner_image = "#{banner}.jpg" | has_custom_image %}
@@ -20,10 +20,22 @@
                 {% set has_banner =  banner_show and (banner_title or banner_image) %}
                 {% set has_banner_text =  banner_title or banner_button_text %}
                 {% if has_banner %}
-                    <div class="col-md-9">
+                    <div class="col-md-2">
                         <div class="textbanner{% if settings.theme_rounded %} box-rounded textbanner-shadow{% endif %}">
                             {% if banner_url %}
-                                <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                    {% if in == 1 %}
+                                         <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                    {% endif %}
+                                    {% if in == 2 %}
+                                         <a class="textbanner-link" href="https://linktr.ee/beeth0ven"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                    {% endif %}
+                                    {% if in == 3 %}
+                                         <a class="textbanner-link" href="https://beethovenvillavo.com/marcas1/"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                    {% endif %}
+                                    {% if in == 4 %}
+                                         <a class="textbanner-link" href="https://beethovenpetcare.site.agendapro.com/co/sucursal/140110"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                    {% endif %}
+
                             {% endif %}
                                 <div class="textbanner-image{% if has_banner_text and textoverimage %} overlay{% endif %}">
                                     {% if banner_image %}
@@ -46,10 +58,11 @@
                         </div>
                     </div>
                 {% endif %}
+                {% set in = in + 1 %}
             {% endfor %}
-            <div class="col-md-9">
+            <div class="col-md-2">
                 <div class="textbanner box-rounded textbanner-shadow">
-                <a class="textbanner-link" href="GOOGLE.COM/" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
+                <a class="textbanner-link" href="https://beethovenpetcare.site.agendapro.com/co/sucursal/140110" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">
                 <img src="{{ 'images/VAC.png' | static_url }}" class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded"/>
                 </div>

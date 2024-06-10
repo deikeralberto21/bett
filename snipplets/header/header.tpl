@@ -21,9 +21,7 @@
                     <div class="col text-left d-none d-md-block">
                         {% include "snipplets/social/social-links.tpl" %}
                     </div>
-                    {% if has_ad_bar %}
                         {% snipplet "header/header-advertising.tpl" %}
-                    {% endif %}
                     <div class="col text-right d-none d-md-block">
                         {% include "snipplets/navigation/navigation-lang.tpl" %}
                     </div>

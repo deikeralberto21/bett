@@ -91,6 +91,7 @@ document.addEventListener('lazybeforeunveil', function(e){
 window.lazySizesConfig = window.lazySizesConfig || {};
 lazySizesConfig.hFac = 0.4;
 
+// POPUP
 
 $(document).ready(function(){
 

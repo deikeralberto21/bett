@@ -83,15 +83,152 @@
 						<a href="https://beethovenvillavo.com/perros/higiene-y-cuidados/orejas1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
 						<a href="https://beethovenvillavo.com/gatos/limpieza-higiene-y-cuidados/orejas2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
 					{% endif %}
+					{% if category.name == 'DIGESTIVAS' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/dietas-de-prescripcion-veterinaria/gastrointestinal/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/gastrointestinal2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'RENAL / URINARIAS' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/dietas-de-prescripcion-veterinaria/renal-urinary/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/renal-urinary2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'HEPATICAS' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/dietas-de-prescripcion-veterinaria/hepatico/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/hepatico2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'SOBREPESO / DIABETES' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/dietas-de-prescripcion-veterinaria/obesidad/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/obesidad2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'OTRAS PATOLOGIAS' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/dietas-de-prescripcion-veterinaria/otros/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/otros2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'ALERGIAS' %}
+						<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/dietas-de-prescripcion-veterinaria/alergias/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/alergias2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'DENTALES' %}
+						<a href="https://beethovenvillavo.com/dentales1" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/dentales2" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'GALLETAS' %}
+						<a href="https://beethovenvillavo.com/galletas-y-huesos?mpage=2" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/galletas1" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
+					{% if category.name == 'NATURALES' %}
+						<a href="https://beethovenvillavo.com/opciones-naturales" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">PERROS</a>
+						<a href="https://beethovenvillavo.com/naturales1" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03">GATOS</a>	
+					{% endif %}
 					</div>
+					<!-- MARcas -->
+					
+					
 			</div>
 		{% if category.description and category_banner %}
 			</div>
 		{% endif %}
 	</div>
+	
 </section>
+
 <section class="js-category-controls-prev category-controls-sticky-detector"></section>
 <section class="js-category-controls category-controls container visible-when-content-ready">
+	<div style="width: 100%;display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;gap:5px;">
+		{% if category.name == 'AGILITY GOLD' %}
+		<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/agility-gold/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+		<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/agility-gold2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'BIRBO' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/ver-mas1/birbo-perro/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/birbo-gato/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'CHUNKY' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/chunky-italcan/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/chunky1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'CHURU' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/ver-mas1/churu1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/ver-mas4/churu2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'EQUILIBRIO' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/equilibrio1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/equilibrio3/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'EXCELLENT' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/excellent-purina/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/excellent1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'EVOLVE' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/evolve1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/evolve2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'FORMULA NATURAL' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/formula-natural1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/formula-natural2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'HILLS' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/hills1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/hills3/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'MONELLO' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/monello1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/monello2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'N&D' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/ver-mas1/n-d/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/ver-mas4/nd1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'NULO' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/ver-mas1/nulo/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/ver-mas4/nulo1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'NUPEC' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/nupec1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/nupec2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'ORIJEN & ACANA' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/orijen-acana1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/orijen-acana2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'PRO PLAN' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/pro-plan1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/pro-plan3/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'ROYAL CANIN' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/royal-canin1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/royal-canin3/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'TASTE OF THE WILD' %}
+			<a href="https://beethovenvillavo.com/perros/alimentos1/alimentos/marcas-perro/taste-of-the-wild1/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/marcas-gato/taste-of-the-wild2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == 'VET LIFE' %}
+			<a href="https://beethovenvillavo.com/vet-life3/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="https://beethovenvillavo.com/gatos/alimentos2/concentrados-mantenimiento/prescripcion-veterinaria/marcas3/vet-life2/" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+			
+		{% if category.name == '' %}
+			<a href="" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">PERROS</a>
+			<a href="" style="padding: 10px 15px;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;width:50%;">GATOS</a>	
+		{% endif %}
+	</div>
 	<div class="row align-items-center mb-md-5">
 		<div class="{% if products %}col-9{% else %}col-12{% endif %} d-none d-md-block">
 			<div class="row">

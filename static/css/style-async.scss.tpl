@@ -353,6 +353,12 @@ style.css
 .itemNavMenu:hover .ion{
   fill:#e67e22;
 }
+
+.activeitem{
+  color:#e67e22;
+  fill:#e67e22;
+}
+
 .radio-buttons-group .list-unstyled{
   .radio-button-item:first-child{
     .radio-button-content{
@@ -1823,10 +1829,11 @@ footer {
 .navmobiloContainer{
   position: fixed;z-index: 100;
   background-color: #fdcc03;
-  height: 10vh;
+  height: 52px;
   width: 100vw;/*! background: none; */background-clip: border-box;
   /*! display: flex; *//*! flex-direction: column; *//*! justify-content: center; *//*! align-items: flex-end; */bottom: 0;padding: 0;
-  font-size:14px;
+  font-size:12px;
+  padding:5px
 }
 
 .navMObilo a{
@@ -1840,6 +1847,7 @@ footer {
 }
 .navMObilo a div .ion{
   font-size:1.9em;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1865,13 +1873,22 @@ footer {
     .imgCard--marca{
       height:50%
     } 
+
+  .imgFott{
+    height:200px;
+    width:200px
+  }
+   
+  .container__popup{
+    position:fixed;
+    margin-bottom:17vh;
+  }
     .continer-promotonal{
     display:grid;
     grid-template-columns:1fr 1fr;
     place-content:center;
 
   }
-
   .containerBanner{
     flex-direction:column
   }
@@ -1889,10 +1906,10 @@ footer {
   }
 
   .container_marcas a img, .container_marcas div a img{
-    background-color:red;
     height:100%;
     width:90%
   }
+
 }
 
 .utilities-container{
@@ -1918,4 +1935,88 @@ footer {
 .pb-5{
   margin-bottom:0;
   padding-bottom:0
+}
+
+.imgFott{
+    height:80px;
+    width:260px;
+}
+
+.img--card:hover{
+  scale:1.1
+}
+
+.container__popup{
+  position:fixed;
+  z-index:101;
+  bottom:0;
+  right:60px;
+  width:260px;
+  height:140px;
+  border: 2px solid orange;
+  border-radius:50px;
+  margin-bottom:9vh;
+  transition:0.3s;
+  background:white;
+}
+
+.closenav{
+  width:80%;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.closenav ion-icon{
+  font-size:1.5em;
+  margin:5px 0;
+  cursor:pointer;
+}
+
+.content__popup{
+  width:100%;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+
+.containerUbicaction{
+  position:fixed;
+  z-index:110;
+  top:0;
+  width:100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.containerMens{
+  margin-top: 7%;
+  background-color: white;
+  width: 55%;
+  height: 35%;
+  padding: 15px;  
+}
+
+.containermsjcontent{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100% ;
+}
+.containerMens div ion-icon{
+  font-size: 4em;
+}
+
+.containerMens div:nth-child(1){
+  gap: 8px;
 }

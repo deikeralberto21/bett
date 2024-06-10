@@ -5,7 +5,7 @@
 <div style="margin-top: 80px;display: grid;grid-template-columns: 1fr 1fr;margin: auto;place-content: center;">
         <a href="https://beethovenvillavo.com/galletas"><img class="imgCard2" src="{{ 'images/alimen/24.png' | static_url }}"></a>
         <a href="https://beethovenvillavo.com/naturales"><img class="imgCard2" src="{{ 'images/alimen/25.png' | static_url }}"></a>
-        <a href="https://beethovenvillavo.com/humedos2"><img class="imgCard2" src="{{ 'images/alimen/26.png' | static_url }}"></a>
+        <a href="https://beethovenvillavo.com/dulces"><img class="imgCard2" src="{{ 'images/alimen/26.png' | static_url }}"></a>
         <a href="https://beethovenvillavo.com/dentales"><img class="imgCard2" src="{{ 'images/alimen/27.png' | static_url }}"></a>
 
 </div>
