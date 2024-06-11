@@ -10,7 +10,7 @@
                     {% set num_banners = num_banners + 1 %}
                 {% endif %}
             {% endfor %}
-
+            {% set int = 1 %}
             {% for banner in ['banner_01', 'banner_02', 'banner_03'] %}
                 {% set banner_show = attribute(settings,"#{banner}_show") %}
                 {% set banner_image = "#{banner}.jpg" | has_custom_image %}
@@ -23,7 +23,12 @@
                     <div class="col-md-9">
                         <div class="textbanner{% if settings.theme_rounded %} box-rounded textbanner-shadow{% endif %}">
                             {% if banner_url %}
-                                <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                {% if int == 3%}
+                                    <a class="textbanner-link" href="https://beethovenvillavo.com/alimentos3"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+
+                                {%else%}
+                                    <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                                {% endif %}
                             {% endif %}
                             {% if banner_image %}
                                 <div class="textbanner-image{% if has_banner_text and textoverimage %} overlay{% endif %}">
@@ -46,6 +51,7 @@
                         </div>
                     </div>
                 {% endif %}
+                {% set int = int + 1 %}
             {% endfor %}
             <div class="col-md-9">
                 <div class="textbanner box-rounded textbanner-shadow">
