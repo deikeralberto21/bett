@@ -1,5 +1,5 @@
-<section class="section-banners-home" data-store="banner-home-categories">
-    <div class="container{% if settings.banners_full %}-fluid{% endif %}">
+<section class="section-banners-home row justify-content-center" data-store="banner-home-categories">
+    <div class="row justify-content-center container{% if settings.banners_full %}-fluid{% endif %}" style='background:red;'>
         <div class='containerBanner'>
             {% set num_banners = 0 %}
             {% for banner in ['banner_01', 'banner_02', 'banner_03'] %}
@@ -20,7 +20,7 @@
                 {% set has_banner =  banner_show and (banner_title or banner_description or banner_image) %}
                 {% set has_banner_text =  banner_title or banner_description %}
                 {% if has_banner %}
-                    <div class="col-md-2">
+                    <div class="col-md-9">
                         <div class="textbanner{% if settings.theme_rounded %} box-rounded textbanner-shadow{% endif %}">
                             {% if banner_url %}
                                 <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
@@ -47,18 +47,18 @@
                     </div>
                 {% endif %}
             {% endfor %}
-            <div class="col-md-2">
+            <div class="col-md-9">
                 <div class="textbanner box-rounded textbanner-shadow">
-                <a class="textbanner-link" href="" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
+                <a class="textbanner-link" href="https://beethovenvillavo.com/accesorios11" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">
                 <img class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded" src="{{ 'images/ACCESORIO.png' | static_url }}">
                 </div>
                 </a>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-9">
                 <div class="textbanner box-rounded textbanner-shadow">
-                <a class="textbanner-link" href="" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
+                <a class="textbanner-link" href="https://beethovenvillavo.com/farmacia11" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">
                 <img class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded" src="{{ 'images/LIMPIEZA.png' | static_url }}">
                 </div>
@@ -66,9 +66,9 @@
                 </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-9">
             <div class="textbanner box-rounded textbanner-shadow">
-            <a class="textbanner-link" href="" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
+            <a class="textbanner-link" href="https://beethovenvillavo.com/higiene-principal/" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
             <div class="textbanner-image">
             <img class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded" src="{{ 'images/limpi.png' | static_url }}">
             </div>

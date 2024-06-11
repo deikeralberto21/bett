@@ -1867,6 +1867,9 @@ footer {
 }
 
   @media screen and (max-width: 768px) {
+    .mensajeContenedor{
+      background-color:red;
+    }
     .imgCard{
       height:80%
     } 
@@ -1888,9 +1891,6 @@ footer {
     grid-template-columns:1fr 1fr;
     place-content:center;
 
-  }
-  .containerBanner{
-    flex-direction:column
   }
 
   .imgCard{
@@ -1925,8 +1925,10 @@ footer {
 }
 
 .containerBanner{
-  display: flex;
-  justify-content:center;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  place-items:center;
+  width:100%  
 }
 .itemBanner{
   height:10px;
@@ -1996,12 +1998,13 @@ footer {
 
 }
 
-.containerMens{
+.mensajeContenedor{
   margin-top: 7%;
   background-color: white;
-  width: 55%;
-  height: 35%;
+  width: max-content;
+  height: max-content;
   padding: 15px;  
+  border-radius:10px;
 }
 
 .containermsjcontent{
@@ -2013,10 +2016,10 @@ footer {
   height: 100%;
   width: 100% ;
 }
-.containerMens div ion-icon{
+.mensajeContenedor div ion-icon{
   font-size: 4em;
 }
 
-.containerMens div:nth-child(1){
+.mensajeContenedor div:nth-child(1){
   gap: 8px;
 }

@@ -320,7 +320,7 @@
         {{ component('assorted-js', {}) }}
         {% if page_title == 'BEETHOVEN PET CARE VILLAVICENCIO ' %}
         <div id="containerUbicaction" class="containerUbicaction">
-            <div id="containermsj" class="containerMens">
+            <div  id="containermsj" class="mensajeContenedor">
                 <div class="containermsjcontent">
                     
                     <div>
@@ -332,7 +332,7 @@
                         <a href="https://www.beethovenpetcare.com/"><button style="outline:none; padding: 10px 25px;border:none;border-radius:15px;color:white;font-style:bold;text-align:center;background:#fdcc03;">BOGOTÁ</button></a>
                     </div>
                 </div>
-            </div>  
+            </div> 
         </div>
             <div class="container__popup" id="popupContainer">
                 <div class="content__popup" id="popupContent">
