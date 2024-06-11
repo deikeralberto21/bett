@@ -1,5 +1,5 @@
 <section class="section-banners-home row justify-content-center" data-store="banner-home-categories">
-    <div class="row justify-content-center container{% if settings.banners_full %}-fluid{% endif %}" style='background:red;'>
+    <div class="row justify-content-center container{% if settings.banners_full %}-fluid{% endif %}">
         <div class='containerBanner'>
             {% set num_banners = 0 %}
             {% for banner in ['banner_01', 'banner_02', 'banner_03'] %}
