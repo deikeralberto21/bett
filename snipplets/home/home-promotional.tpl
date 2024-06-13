@@ -1,6 +1,6 @@
 <section class="section-banners-home">
     <div class="container{% if settings.banner_promotional_full %}-fluid{% endif %}">
-        <div class="containerBanner">
+        <div id="containerBannerV2" class="containerBannerV2">
             {% set num_banners = 0 %}
             {% set in = 1%}
             {% for banner in ['banner_promotional_01', 'banner_promotional_02'] %}
@@ -20,7 +20,7 @@
                 {% set has_banner =  banner_show and (banner_title or banner_image) %}
                 {% set has_banner_text =  banner_title or banner_button_text %}
                 {% if has_banner %}
-                    <div class="col-md-9">
+                    <div class="col-md-12">
                         <div class="textbanner{% if settings.theme_rounded %} box-rounded textbanner-shadow{% endif %}">
                             {% if banner_url %}
                                     {% if in == 1 %}
@@ -60,11 +60,11 @@
                 {% endif %}
                 {% set in = in + 1 %}
             {% endfor %}
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="textbanner box-rounded textbanner-shadow">
                 <a class="textbanner-link" href="https://beethovenpetcare.site.agendapro.com/co/sucursal/140110" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">
-                <img src="{{ 'images/VAC.png' | static_url }}" class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded"/>
+                <img src="{{ 'images/cita.png' | static_url }}" class="textbanner-image-background lazyautosizes blur-up-huge lazyloaded"/>
                 </div>
                 </a>
                 </div>
@@ -72,3 +72,22 @@
         </div>
     </div>
 </section>
+
+<script>
+    var contenedor = document.querySelector('#containerBannerV2')
+    if(window.innerWidth <=767){
+        contenedor.classList.toggle('containerBannerMovil')
+        contenedor.classList.toggle('containerBannerV2')
+    }
+    window.addEventListener('resize',()=>{
+        if(window.innerWidth <=767){
+            contenedor.classList.remove('containerBannerV2')
+            contenedor.classList.add('containerBannerMovil')
+        }else{
+            contenedor.classList.remove('containerBannerMovil')
+            contenedor.classList.add('containerBannerV2')
+
+        }   
+    })
+
+</script>

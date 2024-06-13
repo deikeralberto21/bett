@@ -11,7 +11,7 @@
 		{% if item.subitems %}
 			<li class="nav-item {% if desktop_nav %}js-item-subitems-desktop nav-item-desktop {% if not subitem %}nav-dropdown nav-main-item {% endif %}{% endif %}item-with-subitems" data-component="menu.item">
 				<div class="nav-item-container {% if not desktop_nav %}js-nav-list-toggle-accordion{% endif %}">
-					<a class="{% if not desktop_nav %}js-toggle-page-accordion{% endif %} nav-list-link {{ item.current ? 'selected' : '' }}" href="{% if desktop_nav %}{{ item.url }}{% else %}#{% endif %}">
+					<a  style='display:flex;align-items:center;gap:2px;' class="{% if not desktop_nav %}js-toggle-page-accordion{% endif %} nav-list-link {{ item.current ? 'selected' : '' }}" href="{% if desktop_nav %}{{ item.url }}{% else %}#{% endif %}">
 					{% if item.name == 'PERROS' %}
 
 						{{'<ion-icon class="ion" name="paw"></ion-icon>'}}
@@ -66,7 +66,7 @@
 		{% else %}
 			
 			<li class="nav-item {% if desktop_nav %}nav-item-desktop {% if not subitem %}nav-main-item{% endif %}{% endif %}" data-component="menu.item">
-					<a class="nav-list-link {{ item.current ? 'selected' : '' }}" href="{{ item.url | setting_url }}">
+					<a style='display:flex;align-items:center;gap:2px;' class="nav-list-link {{ item.current ? 'selected' : '' }}" href="{{ item.url | setting_url }}">
 					{% if item.name == 'INICIO' %}
 						{{'<ion-icon class="ion" name="home"></ion-icon>'}}
 					{% endif %}

@@ -1,4 +1,4 @@
-<section class="section-banners-home row justify-content-center" data-store="banner-home-categories">
+<section class="section-banners-home justify-content-center" style="width: 100%;display: flex;justify-content: center;" data-store="banner-home-categories">
     <div class="row justify-content-center container{% if settings.banners_full %}-fluid{% endif %}">
         <div class='containerBanner'>
             {% set num_banners = 0 %}
@@ -20,7 +20,7 @@
                 {% set has_banner =  banner_show and (banner_title or banner_description or banner_image) %}
                 {% set has_banner_text =  banner_title or banner_description %}
                 {% if has_banner %}
-                    <div class="col-md-9">
+                    <div class="col-md-12">
                         <div class="textbanner{% if settings.theme_rounded %} box-rounded textbanner-shadow{% endif %}">
                             {% if banner_url %}
                                 {% if int == 3%}
@@ -53,7 +53,7 @@
                 {% endif %}
                 {% set int = int + 1 %}
             {% endfor %}
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="textbanner box-rounded textbanner-shadow">
                 <a class="textbanner-link" href="https://beethovenvillavo.com/accesorios11" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">
@@ -62,7 +62,7 @@
                 </a>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="textbanner box-rounded textbanner-shadow">
                 <a class="textbanner-link" href="https://beethovenvillavo.com/farmacia11" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
                 <div class="textbanner-image">
@@ -72,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-md-12">
             <div class="textbanner box-rounded textbanner-shadow">
             <a class="textbanner-link" href="https://beethovenvillavo.com/higiene-principal/" title="Banner de BEETHOVEN PET CARE VILLAVICENCIO " aria-label="Banner de BEETHOVEN PET CARE VILLAVICENCIO ">
             <div class="textbanner-image">
@@ -84,3 +84,19 @@
         </div>
     </div>
 </section>
+
+<script>
+    var contenedorER = document.querySelector('.containerBanner')
+    if(window.innerWidth <=767){
+        contenedorER.classList.toggle('containerBannerMovil')
+    }
+    window.addEventListener('resize',()=>{
+        if(window.innerWidth <=767){
+            contenedorER.classList.add('containerBannerMovil')
+        }else{
+            contenedorER.classList.remove('containerBannerMovil')
+        }   
+    })
+
+</script>
+

@@ -338,7 +338,7 @@
                 <div class="content__popup" id="popupContent">
                     <div class="closenav"> 
                         <ion-icon  id="closePopup" name="close-outline"></ion-icon></div>
-                    <p> ¿Tienes alguna duda? ¿No encuentras lo que buscas?, Escribenos! Te ayudaremos con gusto</p>
+                    <p> ¿Tienes alguna duda? ¿No encuentras lo que buscas? ¡Escríbenos Te ayudaremos con gusto.</p>
                 </div>
             </div>
             <script>

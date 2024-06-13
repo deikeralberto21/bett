@@ -1867,9 +1867,7 @@ footer {
 }
 
   @media screen and (max-width: 768px) {
-    .mensajeContenedor{
-      background-color:red;
-    }
+    
     .imgCard{
       height:80%
     } 
@@ -1926,7 +1924,21 @@ footer {
 
 .containerBanner{
   display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items:center;
+  width:100% 
+}
+
+.containerBannerMovil{
   grid-template-columns:1fr 1fr;
+  display:grid;
+  place-items:center;
+  width:100% 
+}
+
+.containerBannerV2{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
   place-items:center;
   width:100%  
 }
